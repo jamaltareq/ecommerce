@@ -30,6 +30,7 @@ let routers = createBrowserRouter([
       { path: 'Products', element: <ProtactedRout><Products /></ProtactedRout> },
       { path: 'Register', element: <Register /> },
       { path: 'SignIn', element: <SignIn /> },
+      { path: 'ecommerce', element: <SignIn /> },
       { path: 'details/:id', element: <Detilesproduct /> },
       { path: '*', element: <NotFound /> },
     ]
