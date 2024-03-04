@@ -22,7 +22,7 @@ import { Offline } from 'react-detect-offline';
 
 let routers = createBrowserRouter([
   {
-    path: '', element: <LayOut />, children: [
+    path: 'ecommerce', element: <LayOut />, children: [
       { path: "/", element: <ProtactedRout><Home /></ProtactedRout> },
       { path: 'Cart', element: <ProtactedRout><Cart /></ProtactedRout> },
       { path: 'Catgory', element: <ProtactedRout><Catgory /></ProtactedRout> },
@@ -30,7 +30,6 @@ let routers = createBrowserRouter([
       { path: 'Products', element: <ProtactedRout><Products /></ProtactedRout> },
       { path: 'Register', element: <Register /> },
       { path: 'SignIn', element: <SignIn /> },
-      { path: 'ecommerce', element: <SignIn /> },
       { path: 'details/:id', element: <Detilesproduct /> },
       { path: '*', element: <NotFound /> },
     ]
